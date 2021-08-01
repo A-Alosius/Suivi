@@ -2,6 +2,12 @@ body{
     margin: 0;
 }
 
+#container{
+    margin: auto;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
 #makepdf {
     display: none;
     margin: auto;
@@ -28,4 +34,13 @@ td{
 
 h2{
     text-align: center;
+}
+#box{
+    padding: 0;
+    text-align: center;
+}
+label{
+    display: inline-block;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
