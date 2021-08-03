@@ -27,6 +27,7 @@ create.addEventListener('click', (e) => {
         for (let j=0; j<col; j++){
             let cl = document.createElement('td');
             let inp = document.createElement('input');
+            inp.classList.add('shift')
             inp.type = 'text';
             cl.appendChild(inp);
             inp.id = j;
