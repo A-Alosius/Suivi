@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background: linear-gradient(to right, #333333, #cccccc);
 }
 
 #container{
@@ -15,18 +16,23 @@ body{
 }
 table{
     margin: auto;
+   
     box-shadow: 1px 4px 8px rgb(196, 195, 195);
 }
 table, tr, td{
-    border: 1px solid black;
+    border: 3px solid black;
     border-collapse: collapse;
 }
 
 td{
-    padding: 10px;
+    padding: 3px;
     width: 20%;
 }
 
+.shift {
+    background: none;
+    border: none;
+}
 #save {
     margin: auto;
     display: none;
@@ -34,6 +40,8 @@ td{
 
 h2{
     text-align: center;
+    font-family: Poppins;
+    font-size: 43px;
 }
 #box{
     padding: 0;
@@ -43,18 +51,60 @@ label{
     display: inline-block;
     margin-bottom: 2%;
     margin-top: 2%;
+      font-family: Poppins;
+      color: wheat;
 }
+#dptval, #auth{
+    border: 2px solid white;
+    background: none;
+    
+}
+#columns, #rows {
+    border: 2px solid white;
+  width: 100px;
+  text-align: center;
+  outline-color: black;
+     background-color: #565656;
+  color: transparent;
+  font-family: Poppins;
+  font-size: 50px;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text; 
+     /* box-shadow: inset 0px 0px 10px 10px black; */
 
+}
 #department_field{
+
     margin: auto;
     width: 50%;
     text-align: center;
     margin-top: 2%;
 }
-
+#tableFields, #save,#makepdf {
+    padding: 12px;
+    border: 4px solid oldlace;
+    background: none;
+    font-family: Poppins;
+}
+#tableFields:hover, #save:hover, #makepdf:hover {
+    transition: 1.2s;
+     background-color: white;
+  color: transparent;
+  text-shadow: 0px 0px 22px red;
+  cursor: pointer;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text; 
+}
 #department_field input{
     left: 50%;
     margin: 1%;
+     
+     }
+#department_field input:active {
+ 
 }
 
 #department_field #auth{
@@ -68,3 +118,7 @@ label{
     margin-top: 2%;
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url(../fonta/Poppins-Light.ttf);
+}
